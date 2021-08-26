@@ -35,7 +35,7 @@ def calc(*args):
         print(f"Wynik dzielenia to: {args[1]/args[2]}")
 
 method=input("Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie:")
-while value_check(method) == False or value_check(method) == True and float(method) not in [1.0,2.0,3.0,4.0]:
+while value_check(method) == False or float(method) not in [1.0,2.0,3.0,4.0]:
     method=input("Niepoprawna wartość, podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie:")
 if int(method)==2 or int(method)==4:
     value_1=input("podaj pierwszą wartość:")
